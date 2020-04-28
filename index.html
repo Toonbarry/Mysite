@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<title>handmade shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body bgcolor="#CD5C5C"
+class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    
+   
+   <p class="w3-button w3-black w3-padding-large w3-large">HANDMADE SHOP</a></p> <!--Logo-->
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Home <i class="fa fa-caret-down"></i>
+    <a href="t-shirt.html" class="w3-bar-item w3-button">T-Shirts</a> <!--คลิก T-shirt เพื่อไปหน้า T-shirts catalog-->
+    <a href="dress.html" class="w3-bar-item w3-button">Dresses</a>  <!--คลิก dress เพื่อไปหน้า dress catalog-->
+    <a href="bag.html" class="w3-bar-item w3-button">Bag</a>  <!--คลิก Bag เพื่อไปหน้า Bag catalog-->
+    
+    
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding">Contact</a> <!--คลิก contact เพื่อไปหน้า contact-->
+ 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="hm03.jpg" alt="Jeans" style="width:100%"> <!--การใส่รูปอย่างในหน้าหลัก-->
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <p><a href="#jeans" class="w3-button w3-red w3-padding-large w3-large">SHOP NOW</a></p> <!--คลิก Shop now เพื่อไปดูสินค้าตัวอย่าง-->
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-white"> <!--หน้าสินค้าตัวอย่าง-->
+    <div class="w3-col l3 s6"> <!--การทำให้รูปอยู่ตรงกลาง-->
+      <div class="w3-container">
+        <img src="hm12.jpg" style="width:100%"> <!--การใส่รูปสินค้าตัวอย่าง-->
+        <p>Round Straw Shoulder Bag<br><b>$29.99</b></p> <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+      <div class="w3-container">
+        <img src="hm04.jpg" style="width:100%"> <!--การใส่รูปสินค้าตัวอย่าง-->
+        <p>DESMOND & DEMPSEY <br><b>$12.99</b></p> <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="hm05.jpg" style="width:100%"> <!--การใส่รูปสินค้าตัวอย่าง-->
+          <span class="w3-tag w3-display-topleft">New</span>  <!--การใส่ข้อความเพื่อให้ลุกค้าสนใจมากขึ้น-->
+          <div class="w3-display-middle w3-display-hover">
+          </div>
+        </div>
+        <p>Linen-blend Jumpsuit<br><b>$49.99</b></p> <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+      <div class="w3-container">
+        <img src="hm06.jpg" style="width:100%"> <!--การใส่รูปสินค้าตัวอย่าง-->
+        <p>Long Linen-blend Shirt<br><b>$34.50</b></p> <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="hm07.jpg" style="width:100%">   <!--การใส่รูปสินค้าตัวอย่าง-->
+        <p>Linen-blend Paper Shorts<br><b>$29.50</b></p>    <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="hm31.jpg" style="width:100%">    <!--การใส่รูปสินค้าตัวอย่าง-->
+          <span class="w3-tag w3-display-topleft">Sale</span>    <!--การใส่ข้อความเพื่อให้ลุกค้าสนใจมากขึ้น-->
+          <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+        </div>
+        <p>Shopper<br><b class="w3-text-red">$24.99</b></p>    <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="hm09.jpg" style="width:100%">    <!--การใส่รูปสินค้าตัวอย่าง-->
+        <p>Leg Cropped Jeans<br><b>$29.99</b></p>   <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+      <div class="w3-container">
+        <img src="hm10.jpg" style="width:100%">    <!--การใส่รูปสินค้าตัวอย่าง-->
+        <p>Belt Bag<br><b>$34.99</b></p>    <!--การใส่ชื่อของสินค้าและราคาของสินค้า-->
+      </div>
+    </div>
+
+    
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  
+
+</body>
+</html>
